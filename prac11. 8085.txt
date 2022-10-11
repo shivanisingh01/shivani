@@ -1,0 +1,9 @@
+#write 8085 program to perform arithmetic operations.
+2000 MVI A,07H    #move data 07 into A
+2002 MVI B,02H  #move data 02 into B
+2004 ADD B   #add A and B  and store result in A
+2005 STA 2010H  #store value of A in memory 2010H
+2008 MVI C,03H  #move data 03 into C
+200A SUB C     #subtract C from A and  store result in A
+200B STA 2014H  #store value of A in memory 2014H
+200E HLT   #end of pgm or halt
